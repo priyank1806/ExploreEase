@@ -1,0 +1,85 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #e8f4ff, #cde8f7);
+  color: #333;
+}
+
+header {
+  background-color: #4caf50;
+  text-align: center;
+  color: white;
+  padding: 2rem 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* Trek Cards Container */
+.trek-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Individual Trek Cards */
+.trek-card {
+  background: white;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.trek-card h2 {
+  font-size: 1.2rem;
+  color: #4caf50;
+  margin-bottom: 10px;
+}
+
+.trek-card p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.trek-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .trek-card {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .trek-card {
+    width: 150px;
+    height: 150px;
+  }
+
+  .trek-card h2 {
+    font-size: 1rem;
+  }
+
+  .trek-card p {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.description {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #7f8c8d;
+}
+
+/* Seasons Section */
+.seasons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.season-card {
+  flex: 1;
+  min-width: 300px;
+  max-width: 350px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.season-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.season-card h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+.season-card h3 {
+  font-size: 1.5em;
+  color: #e74c3c;
+  margin-bottom: 15px;
+}
+
+.season-card p {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Season-Specific Styles */
+.spring {
+  background: linear-gradient(135deg, #a8e063, #56ab2f);
+  color: #fff;
+}
+
+.monsoon {
+  background: linear-gradient(135deg, #6dd5ed, #2193b0);
+  color: #fff;
+}
+
+.winter {
+  background: linear-gradient(135deg, #b3cde0, #6497b1);
+  color: #fff;
+}
+
+/* Festivals Section */
+.festivals {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.festivals h2 {
+  font-size: 2em;
+  color: #2980b9;
+  margin-bottom: 20px;
+}
+
+.festivals ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2em;
+}
+
+.festivals li {
+  margin-bottom: 10px;
+}
+
+.festivals li b {
+  color: #34495e;
+}
